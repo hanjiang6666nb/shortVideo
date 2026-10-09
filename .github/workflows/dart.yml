@@ -1,0 +1,42 @@
+#此工作流使用未经GitHub认证的操作。
+跑
+#单独的服务条款、隐私政策和支持
+#documentation。
+
+名称：Dart: 飞镖
+
+在……之上：:
+推：:
+分支机构：["main"]: [ "主要" ]
+pull_request：:
+分支机构：["main"]: [ "主要" ]
+
+作业：:
+建立：:
+run-on:ubuntu-latest: Ubuntu-最新
+
+步骤：:
+-使用：操作/结帐@v4uses: 操作/结帐@v4
+
+#注意：此工作流使用Dart SDK最新稳定版.#注意：此工作流使用Dart SDK的最新稳定版本。
+#如果需要，您可以指定其他版本，请参阅此处的文档：#如果需要，您可以指定其他版本，请参阅此处的文档：
+#https://github.com/dart-lang/setup-dart/blob/main/README.md#https://github.com/dart-lang/setup-dart/blob/main/README.md
+#-用途：dart-lang/setup-dart@v1#-用途：dart-lang/setup-dart@v1
+-用途：dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+
+-名称：安装依赖项name: 安装相依性
+跑步：dart酒吧get: dart酒吧get
+
+#取消注释此步骤以验证每次提交时是否使用了"dart格式".#取消注释此步骤，以验证在每次提交时是否使用了“dart格式”。
+#-名称：圣证格式#-名称：验证格式
+#run:dart格式--输出=无--设置-退出--如果更改。#运行：dart格式--输出=无--如果已更改，则设置退出.
+
+#考虑传递'--致命信息'以进行稍微严格的分析。#考虑传递“--fatal-infos”以进行稍微严格的分析。
+-名称：分析项目来源name: 分析项目来源
+管路：省道分析: dart分析
+
+      
+飞镖试验
+#想将此更改为“颤振测试”。#想要将此更改为“颤振测试”。
+-名称：运行测试name: 运行测试
+管路：省道测试: 飞镖试验
